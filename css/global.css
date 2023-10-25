@@ -1,5 +1,15 @@
 @charset "UTFI-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body{
     background-color: #F6F7FB;
+}
+
+.ff-primary{
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-menu{
+    transition: .4s;
 }
