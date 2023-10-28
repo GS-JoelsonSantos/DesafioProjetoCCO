@@ -13,3 +13,11 @@ body{
 .dropdown-menu{
     transition: .4s;
 }
+
+.bg-dark-subtle{
+    background-color: #212f3c !important;
+}
+
+.text-small{
+    font-size: 0.77rem;
+}
