@@ -6,7 +6,7 @@ body{
     background-color: #F6F7FB;
 }
 
-.ff-primary{
+li{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -14,7 +14,7 @@ body{
     transition: .4s;
 }
 
-.bg-dark-subtle{
+.bg-info{
     background-color: #212f3c !important;
 }
 
