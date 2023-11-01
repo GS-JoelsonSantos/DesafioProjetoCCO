@@ -4,25 +4,5 @@
 
 body{
     background-color: #F6F7FB;
-}
-
-li{
-    font-family: 'Poppins', sans-serif;
-}
-
-h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-}
-
-.dropdown-menu{
-    transition: .4s;
-}
-
-.bg-info{
-    background-color: #212f3c !important;
-}
-
-.text-small{
-    font-size: 0.77rem;
+    box-sizing: border-box;
 }
