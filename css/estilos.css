@@ -1,0 +1,32 @@
+body{
+    background-color: #f6f7fb;
+}
+
+.aside-bg-custom{
+    color: white;
+    background-color: #212f3c;
+}
+
+.w-25px{
+    width: 25px;
+}
+
+
+.columa-160px{
+    max-width: 260px;
+}
+
+.active-hover{
+    opacity: .8;
+}
+
+.active-hover:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.active{
+    color: #ffff !important;
+    border-left: 4px solid #307fcc;
+    background: linear-gradient(90deg, rgba(59, 125, 221, .1), rgba(59, 125, 221, .0875) 50%,transparent);
+}

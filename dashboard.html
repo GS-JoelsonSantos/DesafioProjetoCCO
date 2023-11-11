@@ -8,122 +8,149 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <!-- Aside Menu-->
-    <div class="container-fluid p-0 m-0 bg-body-secondary">
-        <div class="row vh-100 p-0 m-0">
-            <div class="col border p-0 m-0">
-                <div class="h-100 bg-info text-white-50">
-                    <div class="w-100">
-                        <div class="ms-3">
-                            <div class="text-white pt-3 d-flex align-items-center h-100">
-                                <h3>CCO</h3>
-                            </div>
+    <!-- Container -->
+    <div class="container-fluid">
+        <!-- Row -->
+        <div class="row p-0">
+            <!-- Coluna/Aside -->
+            <div class="col p-0 columa-160px aside-bg-custom">
 
-                            <ul class="list-unstyled">
-                                <div class="small my-4 text-white ff-p-small">Perfil</div>
-                                <ul class="list-unstyled ms-2 d-flex flex-column justify-content-center gap-3">
-                                    <li class="d-flex align-items-center py-">
-                                        <i class="fa-regular fa-user" style="width: 32px;"></i>
-                                        Seus Dados
-                                    </li>
-                                    <li class="d-flex align-items-center py-">
-                                        <i class="fa-solid fa-right-from-bracket" style="width: 32px;"></i>
-                                        Sair
-                                    </li>
-                                </ul>
-                            </ul>
+                <ul class="list-unstyled text-white-50">
+                    <!-- Logo CCO -->
+                    <li class="my-3 ms-4">
+                        <span>
+                            <a href="#" class="text-decoration-none text-white">CCO</a>
+                        </span>
+                    </li>
+                    <!-- /Logo CCO -->
+                    
+
+                    <!-- Grupo Inicio -->
+                    <li class="my-3 mt-4 active">
+                        <a href="#" class="text-decoration-none text-white-50 active-hover w-100 d-block py-2 ms-4 ff-Inter">
+                            <i class="fa-solid fa-sliders w-25px"></i>
+                            Início
+                        </a>
+                    </li>
+                    <!-- /Grupo inicio -->
+
+
+                    <!-- Grupo Perfil -->
+                    <li class="py-1 ms-3">
+                        <span class="small ff-roboto">Perfil</span>
+                    </li>
+                    
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-user w-25px"></i>
+                            Seus Dados
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-right-from-bracket w-25px"></i>
+                            Sair
+                        </a>
+                    </li>
+                    <!-- /Grupo Perfil -->
+
+
+                    <!-- Grupo Paineis -->
+                    <li class="py-1 ms-3 mt-2">
+                        <span class="small ff-roboto">Painéis</span>
+                    </li>
+                    
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-location-dot w-25px"></i>
+                            Rotas
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-regular fa-map w-25px"></i>
+                            Operações
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-triangle-exclamation w-25px"></i>
+                            Ocorrências
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-regular fa-calendar w-25px"></i>
+                            Resumo Mensal
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-arrow-trend-up w-25px"></i>
+                            Evolução Anual
+                        </a>
+                    </li>
+                    <!-- /Grupo Paineis -->
+
+
+                    <!-- Grupo Relatorios -->
+                    <li class="py-1 ms-3 mt-2">
+                        <span class="small ff-roboto">Relatórios</span>
+                    </li>
+                    
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-bars w-25px"></i>
+                            Itinerários
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-solid fa-triangle-exclamation w-25px"></i>
+                            Ocorrências
+                        </a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter">
+                            <i class="fa-regular fa-calendar w-25px"></i>
+                            Resultados por Período
+                        </a>
+                    </li>
+                    <!-- /Grupo Relatorios -->
+                </ul>
+            </div>
+
+            <!-- Coluna/Menu -->
+            <div class="col p-0 bg-white h-25 shadow-sm">
+                <!-- NavBar -->
+                <nav class="d-flex align-items-center py-1">
+
+                    <!-- Div Barra -->
+                    <div class="ms-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- /Div Barra -->
+
+                    <div class="w-100 d-flex align-items-center justify-content-end">
+                        <img src="img/avatars/avatar.jpg" class="img-fluid rounded" alt="" style="height: 40px;">
+
+                        <!-- DrowpDow -->
+                        <div class="dropdown ms-2 me-3">
+                            <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guisoft Tecnologia
+                            </a>
                             
-                            <ul class="list-unstyled m-0 p-0">
-                                <div class="small my-4 text-white ff-p-small">Paineis</div>
-                                <ul class="list-unstyled ms-2 d-flex flex-column justify-content-center gap-3">
-                                    <li class="d-flex align-items-center">
-                                        <i class="fa-solid fa-location-dot" style="width: 32px;"></i>
-                                        Rotas
-                                    </li>
-
-                                    <li class="d-flex align-items-center">
-                                        <i class="fa-regular fa-map" style="width: 32px;"></i>
-                                        Operações
-                                    </li>
-
-                                    <li class="d-flex align-items-center p-0 m-0"> 
-                                        <i class="fa-solid fa-triangle-exclamation" style="width: 32px;"></i>
-                                        Ocorrências
-                                    </li>
-
-                                    <li class="d-flex align-items-center p-0 m-0">
-                                        <i class="fa-regular fa-calendar" style="width: 32px;"></i>
-                                        Resumo Mensal
-                                    </li>
-
-                                    <li class="d-flex align-items-center p-0 m-0">
-                                        <i class="fa-solid fa-arrow-trend-up" style="width: 32px;"></i>
-                                        Evolução anual
-                                    </li>
-                                </ul>
-                            </ul>
-
-                            <ul class="list-unstyled m-0 p-0">
-                                <div class="small my-4 text-white ff-p-small">Relatorios</div>
-                                <ul class="list-unstyled ms-2 d-flex flex-column justify-content-center gap-3">
-                                    <li class="d-flex align-items-center">
-                                        <i class="fa-solid fa-bars-staggered" style="width: 32px;"></i>
-                                        Itinerários
-                                    </li>
-
-                                    <li class="d-flex align-items-center p-0 m-0"> 
-                                        <i class="fa-solid fa-triangle-exclamation" style="width: 32px;"></i>
-                                        Ocorrências
-                                    </li>
-
-                                    <li class="d-flex align-items-center p-0 m-0"> 
-                                        <i class="fa-regular fa-calendar" style="width: 32px;"></i>
-                                        Resultados por período
-                                    </li>
-                                </ul>    
+                            <ul class="dropdown-menu mt-3">
+                                <li><a class="dropdown-item ff-Inter" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
                             </ul>
                         </div>
+                        <!-- /DrowpDow -->
                     </div>
-                </div>
+                </nav>
+                <!-- /NavBar -->
+
             </div>
-            <!-- /Aside Menu-->
-
-            <!-- /Menu-->
-            <div class="col-10 p-0 m-0">
-                <div class="d-flex align-items-center w-100 bg-white py-1 px-3 shadow-sm">
-                    <div class="w-100">
-                        <i class="fa-solid fa-bars fa-lg"></i>
-                    </div>
-
-                    <div class="w-100 d-flex align-items-center justify-content-end gap-2">
-                        <img class="img-fluid rounded-1" style="height: 44px;" src="img/avatars/avatar.jpg" alt="">
-
-                        <div class="dropdown">
-                            <a class="dropdown-toggle text-black text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Guisoft Tecnologia
-                            </a>
-                          
-                            <ul class="dropdown-menu mt-4">
-                                <li class="d-flex align-items-center p-0 m-0">
-                                   <span class="dropdown-item">
-                                        <i class="fa-regular fa-user"></i>
-                                        <a class="text-decoration-none text-black" href="#">Perfil</a>
-                                   </span>
-                                </li>
-
-                                <li class="d-flex align-items-center p-0 m-0">
-                                    <span class="dropdown-item">
-                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                        <a class="text-decoration-none text-black" href="#">Sair</a>
-                                    </span>
-                                </li>
-
-                            </ul>
-                          </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Menu-->
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
