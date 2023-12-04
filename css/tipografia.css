@@ -11,3 +11,13 @@
     font-style: normal;
     font-family: 'Inter', sans-serif;
 }
+
+
+.fs-custom-primary{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.fs-custom-small{
+    font-size: 12px;
+}
