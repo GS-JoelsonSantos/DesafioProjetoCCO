@@ -22,12 +22,12 @@ body{
 }
 
 .active-hover{
-    opacity: .8;
+    opacity: 1;
 }
 
 .active-hover:hover{
-    color: #ffffff;
-    opacity: 1;
+    color: #ffffff !important; 
+    opacity: .8 !important;
 }
 
 .active{
