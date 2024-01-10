@@ -21,9 +21,7 @@ body{
     max-width: 260px;
 }
 
-.active-hover{
-    opacity: 1;
-}
+
 
 .active-hover:hover{
     color: #ffffff !important; 
