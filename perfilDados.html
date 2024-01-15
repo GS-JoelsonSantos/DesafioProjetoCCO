@@ -13,7 +13,7 @@
         <!-- Row -->
         <div class="row p-0">
             <!-- Coluna/Aside -->
-            <div class="col p-0 columa-260px aside-bg-custom vh-100 overflow-auto overflow-x-hidden">
+            <div class="col p-0 d-none d-md-block columa-260px aside-bg-custom vh-100 overflow-auto overflow-x-hidden">
 
                 <ul class="list-unstyled text-white-50">
                     <!-- Logo CCO -->
@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="py-2">
-                        <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <a href="login.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                             <i class="fa-solid fa-right-from-bracket w-25px"></i>
                             Sair
                         </a>
@@ -129,19 +129,21 @@
 
             <!-- Coluna/Menu -->
             <div class="col h-25 p-0 ">
+                
                 <!-- NavBar -->
                 <nav class="d-flex align-items-center bg-white shadow-sm py-1">
 
-                    <!-- Div Barra -->
+                    <!-- Icon NavBar -->
                     <div class="ms-2">
                         <i class="fa-solid fa-bars fa-xl"></i>
                     </div>
-                    <!-- /Div Barra -->
+                    <!-- Icon NavBar -->
 
-                    <div class="w-100 d-flex align-items-center justify-content-end">
-                        <img src="img/avatars/avatar.jpg" class="img-fluid rounded" alt="" style="height: 40px;">
+                    
+                    <!-- DrowpDow -->
+                    <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
+                        <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
 
-                        <!-- DrowpDow -->
                         <div class="dropdown ms-2 me-3">
                             <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Guisoft Tecnologia
@@ -152,12 +154,15 @@
                                 <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
                             </ul>
                         </div>
-                        <!-- /DrowpDow -->
+   
                     </div>
+                    <!-- /DrowpDow -->
                 </nav>
                 <!-- /NavBar -->
 
-                <section class="row m-4 gap-2">
+                
+                <!-- Section Perfil -->
+                <section class="row m-3 gap-2">
                     <span class="fs-4 w-100"><strong>Perfil</strong> Seus Dados</span>
 
                     <div class="col p-0">
@@ -174,7 +179,7 @@
                                 <span class="text-black-50 small ps-3 fw-semibold">Dados da conta</span>
                             </div>
                             <div class="row">
-                                <div class="col ms-3">
+                                <div class="col mx-3">
                                     <div class="mb-3 mt-3">
                                         <label for="exampleFormControlInput1" class="form-label fw-semibold">Nome</label>
                                         <input type="email" class="form-control" id="exampleFormControlInput1">
@@ -201,16 +206,25 @@
                                         <input type="email" class="form-control" id="exampleFormControlInput1">
                                     </div>
 
-                                    <div class="mb-3 mt-3">
-                                        <button type="button" class="btn btn-success px-3">Salvar</button>
+                                    <div class="row">
+                                        <div class="col-12 col-md-5 pb-3">
+                                            <button type="button" class="btn btn-success px-3 w-100">Salvar</button>
+                                        </div>
                                     </div>
+                                    
+                                    <!-- <div class="mb-3 mt-3">
+                                        <button type="button" class="btn btn-success px-3">Salvar</button>
+                                    </div> -->
                                 </div>
 
-                                <div class="col">
+                                <div class="col d-none d-md-block">
                                     <div class="text-center">
                                         <div class="mt-4">
                                             <img src="img/avatars/avatar.jpg" class="rounded-circle" style="height: 130px;">
-                                                
+                                            <div>
+                                                <i class="fa-solid fa-pen"></i>
+                                                <a href="#" target="_self" class="text-decoration-none">Alterar Foto</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +232,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
+                <!-- /Section Perfil -->
             </div>
         </div>
     </div>
