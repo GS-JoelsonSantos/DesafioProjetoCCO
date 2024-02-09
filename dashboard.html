@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Dashboard</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <!-- Row -->
         <div class="row p-0">
             <!-- Coluna/Aside -->
-            <div class="col p-0 columa-260px aside-bg-custom vh-100 overflow-auto overflow-x-hidden">
+            <div class="col p-0 columa-260px aside-bg-custom vh-100 overflow-auto overflow-x-hidden d-none d-lg-block">
 
                 <ul class="list-unstyled text-white-50">
                     <!-- Logo CCO -->
@@ -130,14 +130,18 @@
             <!-- Coluna/Menu -->
             <div class="col p-0 bg-white h-25 shadow-sm">
                 <!-- NavBar -->
-                <nav class="d-flex align-items-center py-1">
+                <nav class="d-flex align-items-center py-2 py-lg-1">
 
-                    <!-- Div Barra -->
-                    <div class="ms-2">
-                        <i class="fa-solid fa-bars fa-xl"></i>
+                    <!-- Btn Menu -->
+                    <div class="ms-2 d-lg-none d-block "> 
+                        <a class="btn border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-bars fa-xl "></i>
+                        </a>
                     </div>
-                    <!-- /Div Barra -->
+                    <!-- /Btn Menu -->
 
+
+                    <!-- Section DrowpDow -->
                     <div class="w-100 d-flex align-items-center justify-content-end">
                         <img src="img/avatars/avatar.jpg" class="img-fluid rounded" alt="" style="height: 40px;">
 
@@ -154,11 +158,123 @@
                         </div>
                         <!-- /DrowpDow -->
                     </div>
+                    <!-- Section DrowpDow -->
+
                 </nav>
                 <!-- /NavBar -->
             </div>
         </div>
     </div>
+
+
+      <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start aside-bg-custom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">CCO</h5>
+          <i class="fa-solid fa-xmark fs-2" style="color: #ffffff;" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        </div>
+
+        <div class="offcanvas-body p-0">
+            <ul class="list-unstyled text-white-50">
+                <!-- Grupo Inicio -->
+                <li class="my-3 mt-4 active">
+                    <a href="#" class="text-decoration-none text-white  w-100 d-block py-2 ms-4 ff-Inter">
+                        <i class="fa-solid fa-sliders w-25px"></i>
+                        Início
+                    </a>
+                </li>
+                <!-- /Grupo inicio -->
+
+
+                <!-- Grupo Perfil -->
+                <li class="py-1 ms-3 mt-3">
+                    <span class="small ff-roboto text-white opacity-75">Perfil</span>
+                </li>
+                
+                <li class="py-2">
+                    <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-user w-25px"></i>
+                        Seus Dados
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-right-from-bracket w-25px"></i>
+                        Sair
+                    </a>
+                </li>
+                <!-- /Grupo Perfil -->
+
+
+                <!-- Grupo Paineis -->
+                <li class="py-1 ms-3 mt-3">
+                    <span class="small ff-roboto text-white opacity-75">Painéis</span>
+                </li>
+                
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-location-dot w-25px"></i>
+                        Rotas
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-regular fa-map w-25px"></i>
+                        Operações
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-triangle-exclamation w-25px"></i>
+                        Ocorrências
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-regular fa-calendar w-25px"></i>
+                        Resumo Mensal
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-arrow-trend-up w-25px"></i>
+                        Evolução Anual
+                    </a>
+                </li>
+                <!-- /Grupo Paineis -->
+
+
+                <!-- Grupo Relatorios -->
+                <li class="py-1 ms-3 mt-3">
+                    <span class="small ff-roboto text-white opacity-75">Relatórios</span>
+                </li>
+                
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-bars w-25px"></i>
+                        Itinerários
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-solid fa-triangle-exclamation w-25px"></i>
+                        Ocorrências
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                        <i class="fa-regular fa-calendar w-25px"></i>
+                        Resultados por Período
+                    </a>
+                </li>
+                <!-- /Grupo Relatorios -->
+            </ul>
+        </div>
+
+    </div>
+    <!-- offcanvas -->
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
