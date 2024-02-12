@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Perfil</title>
+    <title>Rotas</title>
 </head>
 <body>
     <!-- Container -->
@@ -39,8 +39,8 @@
                                 <span class="small ff-roboto text-white opacity-75">Perfil</span>
                             </li>
                             
-                            <li class="py-2 active">
-                                <a href="#" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
+                            <li class="py-2">
+                                <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                                     <i class="fa-solid fa-user w-25px"></i>
                                     Seus Dados
                                 </a>
@@ -59,8 +59,8 @@
                                 <span class="small ff-roboto text-white opacity-75">Painéis</span>
                             </li>
                             
-                            <li class="py-2">
-                                <a href="rotas.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                            <li class="py-2 active">
+                                <a href="#" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
                                     <i class="fa-solid fa-location-dot w-25px"></i>
                                     Rotas
                                 </a>
@@ -129,114 +129,147 @@
 
             <!-- Coluna/Menu -->
                 <div class="col p-0 vh-100 overflow-x-hidden">
-                    
+
                     <!-- NavBar -->
-                        <nav class="d-flex align-items-center bg-white shadow-sm py-1">
-                            <!-- Icon NavBar -->
-                                <div class="ms-2 d-lg-none d-md-none d-block "> 
-                                    <a class="btn border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                        <i class="fa-solid fa-bars fa-xl "></i>
-                                    </a>
-                                </div>
-                            <!-- Icon NavBar -->
-
-                            <!-- DrowpDow -->
-                                <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
-                                    <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
-
-                                    <div class="dropdown ms-2 me-3">
-                                        <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Guisoft Tecnologia
-                                        </a>
-                                        
-                                        <ul class="dropdown-menu mt-3">
-                                            <li><a class="dropdown-item ff-Inter" href="#">Perfil</a></li>
-                                            <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
-                                        </ul>
-                                    </div>
-            
-                                </div>
-                            <!-- /DrowpDow -->
-                        </nav>
-                    <!-- /NavBar -->
-
-                    
-                    <!-- Section Perfil -->
-                        <section class="row m-3 gap-2">
-                            <span class="fs-4"><strong>Perfil</strong> Seus Dados</span>
-
-                            <!-- Coluna Perfil Esquerda -->
-                            <div class="col-sm-4 col-md-3 col-md col-sm-12 p-0">
-                                <div class="bg-white text-center py-4 shadow-sm">
-                                    <img src="img/avatars/avatar.jpg" class="rounded-circle" style="height: 80px;">
-                                    <span class="d-block text-black-50">Guisoft Tecnologia</span>
-                                    <span class="d-block text-black-50">GST Turismo</span>
-                                </div>
+                    <nav class="d-flex align-items-center bg-white shadow-sm py-1 d-block d-xl-none d-lg-none d-md-none">
+                        <!-- Icon NavBar -->
+                            <div class="ms-2 d-lg-none d-md-none d-block "> 
+                                <a class="btn border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-bars fa-xl "></i>
+                                </a>
                             </div>
+                        <!-- Icon NavBar -->
 
-                            <!-- Coluna Perfil Esquerda -->
-                                <div class="col-sm-7 col-md-8 col-sm-12 p-0">
+                        <!-- DrowpDow -->
+                            <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
+                                <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
+
+                                <div class="dropdown ms-2 me-3">
+                                    <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Guisoft Tecnologia
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="dropdown-item ff-Inter" href="#">Perfil</a></li>
+                                        <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                        <!-- /DrowpDow -->
+                    </nav>
+                <!-- /NavBar -->
+                    
+                    <!-- Section Rota -->
+                        <section class="row m-3">
+                            <span class="fs-4 p-0 mb-2">
+                                <strong>Painel</strong> Rota
+                            </span>
+
+                            <!-- Coluna Rota -->
+                                <div class="col-md-12 col-sm-12 p-0">
                                     <div class="bg-white rounded border shadow-sm">
 
+                                        <!-- Info -->
                                         <div class="border-bottom bg-body-tertiary py-2 rounded-top">
-                                            <span class="text-black-50 small ps-3 fw-semibold">Dados da conta</span>
+                                            <div class="ps-2">
+                                                <span class="badge text-bg-info text-white">055</span>
+                                                <span class="fw-semibold">SALVADOR - JEQUIÉ</span>
+                                            </div>
                                         </div>
 
                                         <div class="row">
-                                            <!-- Coluda da esquerda -->
-                                            <div class="col mx-3">
-                                                <div class="my-3">
-                                                    <label for="exampleFormControlInput1" class="form-label fw-semibold">Nome</label>
-                                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                                            
+                                            <div class="col">
+                                                <!-- Maps -->
+                                                <div class="w-100 p-3">
+                                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Cosme%20de%20farias,%20salvador+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                                    </iframe>
                                                 </div>
 
-                                                <div class="my-3">
-                                                    <label for="exampleFormControlInput1" class="form-label fw-semibold">Usuário</label>
-                                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                                </div>
+                                                <div class="row p-3 m-0">
+                                                    <div class="col-12 p-0">
 
+                                                        <div class="d-flex align-items-center justify-content-between">
 
-                                                <div class="my-3">
-                                                    <label for="inputPassword4" class="form-labe fw-semibold">Nova senha</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter">Salvador</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle"></i>
+                                                            </div>
 
-                                                <div class="my-3">
-                                                    <label for="inputPassword4" class="form-label fw-semibold">Confirmar nova senha</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Feita de Santana</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
 
-                                                <div class="my-3">
-                                                    <label for="exampleFormControlInput1" class="form-label fw-semibold">CPF</label>
-                                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                                </div>
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white">Branco</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-success "></i>
+                                                            </div>
 
-                                                <div class="row">
-                                                    <div class="col-12 pb-3">
-                                                        <button type="button" class="btn btn-success px-3 w-100">Salvar</button>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Santo Estevão</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
 
-                                            <!-- Coluda da Direita -->
-                                            <div class="col-3 d-xl-block d-lg-none d-md-none d-none ">
-                                                <div class="text-center">
-                                                    <div class="mt-4">
-                                                        <img src="img/avatars/avatar.jpg" class="rounded-circle" style="height: 130px;">
-                                                        <div>
-                                                            <a href="#" target="_self" class="text-decoration-none">Alterar Foto</a>
-                                                            <i class="fa-solid fa-pen"></i>
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Paraguaçu</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Itatim</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Milagres</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">KM1--</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Santa Inês</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Irajuba</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Jaguaquara</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            <div class="position-relative d-inline">
+                                                                <p class="d-inline small ff-Inter text-white-25">Jequié</p>
+                                                                <i class="fa-solid fa-circle position-absolute custom-top-100 start-50 translate-middle text-white fs9"></i>
+                                                            </div>
+
+                                                            
+
+                                                        </div>
+                                                        
+                                                        <div class="w-100 bg-secondary-subtle rounded p-2">
+                                                          
+                                                            
                                                         </div>
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            <!-- Coluna Perfil Esquerda -->
+                            <!-- Coluna Rota -->
                         </section>
-                    <!-- /Section Perfil -->
+                    <!-- /Section Rota -->
                 </div>
             <!-- Coluna/Menu -->
         </div>
@@ -268,8 +301,8 @@
                     <span class="small ff-roboto text-white opacity-75">Perfil</span>
                 </li>
                 
-                <li class="py-2 active">
-                    <a href="perfilDados.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
+                <li class="py-2 ">
+                    <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                         <i class="fa-solid fa-user w-25px"></i>
                         Seus Dados
                     </a>
@@ -288,8 +321,8 @@
                     <span class="small ff-roboto text-white opacity-75">Painéis</span>
                 </li>
                 
-                <li class="py-2">
-                    <a href="rotas.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                <li class="py-2 active">
+                    <a href="#" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
                         <i class="fa-solid fa-location-dot w-25px"></i>
                         Rotas
                     </a>

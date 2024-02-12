@@ -33,3 +33,14 @@ body{
     border-left: 4px solid #307fcc;
     background: linear-gradient(90deg, rgba(59, 125, 221, .1), rgba(59, 125, 221, .0875) 50%,transparent);
 }
+
+/* Custom Boostrap */
+.fs6{
+    font-size: .9rem;
+}
+.fs9{
+    font-size: .6rem;
+}
+.custom-top-100{
+    top: 32px !important;
+}
