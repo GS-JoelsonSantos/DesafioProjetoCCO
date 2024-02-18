@@ -41,6 +41,9 @@ body{
 .fs9{
     font-size: .6rem;
 }
+.fs10{
+    font-size: .5rem;
+}
 .custom-top-100{
     top: 32px !important;
 }
