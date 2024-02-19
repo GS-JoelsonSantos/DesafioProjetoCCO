@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Perfil</title>
+    <title>Itinerarios</title>
 </head>
 <body>
     <!-- Container -->
@@ -39,8 +39,8 @@
                                 <span class="small ff-roboto text-white opacity-75">Perfil</span>
                             </li>
                             
-                            <li class="py-2 active">
-                                <a href="#" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
+                            <li class="py-2 ">
+                                <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                                     <i class="fa-solid fa-user w-25px"></i>
                                     Seus Dados
                                 </a>
@@ -72,7 +72,7 @@
                                 </a>
                             </li>
                             <li class="py-2">
-                                <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                                <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                                     <i class="fa-solid fa-triangle-exclamation w-25px"></i>
                                     Ocorrências
                                 </a>
@@ -103,8 +103,8 @@
                                     Itinerários
                                 </a>
                             </li>
-                            <li class="py-2">
-                                <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                            <li class="py-2 active">
+                                <a href="#" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
                                     <i class="fa-solid fa-triangle-exclamation w-25px"></i>
                                     Ocorrências
                                 </a>
@@ -142,6 +142,17 @@
 
                             <!-- DrowpDow -->
                                 <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
+                                    <div class="dropdown pe-3 ff-Inter">
+                                        <button class="border bg-white py-2 px-2 rounded dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selecione a empresa
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><button class="dropdown-item" type="button">Action</button></li>
+                                          <li><button class="dropdown-item" type="button">Another action</button></li>
+                                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                        </ul>
+                                    </div>
+
                                     <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
 
                                     <div class="dropdown ms-2 me-3">
@@ -161,82 +172,42 @@
                     <!-- /NavBar -->
 
                     
-                    <!-- Section Perfil -->
-                        <section class="row m-3 gap-2">
-                            <h1 class="p-0 mb-4"><strong>Perfil</strong> Seus Dados</h1>
+                    <!-- Section Ocorrencias -->
+                    <section class="row m-lg-5 m-md-5 m-md-3 m-2">
+                        
+                        <h1 class="p-0 mb-4"><strong>Relatório</strong> Ocorências</h1>
+                        
+                        <div class="col-xl-8 col-lg-10 col-sm-12">
+                            <div class="row bg-white rounded shadow-sm p-3 border">
 
-                            <!-- Coluna Perfil Esquerda -->
-                            <div class="col-sm-4 col-md-3 col-md col-sm-12 p-0">
-                                <div class="bg-white text-center py-4 shadow-sm">
-                                    <img src="img/avatars/avatar.jpg" class="rounded-circle" style="height: 80px;">
-                                    <span class="d-block text-black-50">Guisoft Tecnologia</span>
-                                    <span class="d-block text-black-50">GST Turismo</span>
+                                <div class="col-lg-6 col-md-12 col-12 ff-Inter">
+                                    <div class="mb-4">
+                                        <span class="fs-5 d-block py-2">Linha de Código</span>
+                                        <input type="text" class="form-control" placeholder="Adicione o Código da sua linha" aria-label="">
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <span class="fs-5 d-block py-2">Ocorrências</span>
+                                        <input type="text" class="form-control" placeholder="Ocorrências" aria-label="">
+                                    </div>
+
                                 </div>
-                            </div>
 
-                            <!-- Coluna Perfil Esquerda -->
-                                <div class="col-sm-7 col-md-8 col-sm-12 p-0">
-                                    <div class="bg-white rounded border shadow-sm">
-
-                                        <div class="border-bottom bg-body-tertiary py-2 rounded-top">
-                                            <span class="text-black-50 small ps-3 fw-semibold">Dados da conta</span>
-                                        </div>
-
-                                        <div class="row">
-                                            <!-- Coluda da esquerda -->
-                                            <div class="col mx-3">
-                                                <div class="my-3">
-                                                    <label for="exampleFormControlInput1" class="form-label fw-semibold">Nome</label>
-                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                                </div>
-
-                                                <div class="my-3">
-                                                    <label for="exampleFormControlInput1" class="form-label fw-semibold">Usuário</label>
-                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                                </div>
-
-
-                                                <div class="my-3">
-                                                    <label for="inputPassword4" class="form-labe fw-semibold">Nova senha</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
-
-                                                <div class="my-3">
-                                                    <label for="inputPassword4" class="form-label fw-semibold">Confirmar nova senha</label>
-                                                    <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
-
-                                                <div class="my-3">
-                                                    <label for="exampleFormControlInput1" class="form-label fw-semibold">CPF</label>
-                                                    <input type="number" class="form-control" id="exampleFormControlInput1">
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 pb-3">
-                                                        <button type="button" class="btn btn-success px-3 w-100">Salvar</button>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-
-                                            <!-- Coluda da Direita -->
-                                            <div class="col-3 d-xl-block d-lg-none d-md-none d-none ">
-                                                <div class="text-center">
-                                                    <div class="mt-4">
-                                                        <img src="img/avatars/avatar.jpg" class="rounded-circle" style="height: 130px;">
-                                                        <div>
-                                                            <a href="#" target="_self" class="text-decoration-none">Alterar Foto</a>
-                                                            <i class="fa-solid fa-pen"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="col-lg-6 col-md-12 col-12 ff-Inter">
+                                    <div class="mb-4">
+                                        <span class="fs-5 d-block py-2">Linha</span>
+                                        <input type="text" class="form-control" placeholder="Linha">
                                     </div>
                                 </div>
-                            <!-- Coluna Perfil Esquerda -->
-                        </section>
-                    <!-- /Section Perfil -->
+
+                                <div class="col-xl-2 col-lg-4 col-12">
+                                    <button class="btn btn-success w-100">Confirmar</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Section Ocorrencias -->
                 </div>
             <!-- Coluna/Menu -->
         </div>
@@ -268,8 +239,8 @@
                     <span class="small ff-roboto text-white opacity-75">Perfil</span>
                 </li>
                 
-                <li class="py-2 active">
-                    <a href="perfilDados.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
+                <li class="py-2 ">
+                    <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                         <i class="fa-solid fa-user w-25px"></i>
                         Seus Dados
                     </a>
@@ -301,7 +272,7 @@
                     </a>
                 </li>
                 <li class="py-2">
-                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                    <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                         <i class="fa-solid fa-triangle-exclamation w-25px"></i>
                         Ocorrências
                     </a>
@@ -332,8 +303,8 @@
                         Itinerários
                     </a>
                 </li>
-                <li class="py-2">
-                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                <li class="py-2 active">
+                    <a href="#" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
                         <i class="fa-solid fa-triangle-exclamation w-25px"></i>
                         Ocorrências
                     </a>
