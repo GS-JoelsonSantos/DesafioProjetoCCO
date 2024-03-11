@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Resultados por Período</title>
+    <title>Gerar Ocorrências</title>
 </head>
 <body>
     <!-- Container -->
@@ -15,7 +15,7 @@
             <!-- Coluna/Aside -->
                 <div class="col p-0 d-none d-md-block columa-260px aside-bg-custom vh-100 overflow-x-hidden">
                     <ul class="list-unstyled text-white-50">
-                        <!-- Logo CCO -->
+                        <!-- Logo CCO -->   
                             <li class="my-3 ms-4">
                                 <span>
                                     <a href="#" class="text-decoration-none text-white fs-5 fw-semibold active-hover">CCO</a>
@@ -39,7 +39,7 @@
                                 <span class="small ff-roboto text-white opacity-75">Perfil</span>
                             </li>
                             
-                            <li class="py-2 ">
+                            <li class="py-2">
                                 <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                                     <i class="fa-solid fa-user w-25px"></i>
                                     Seus Dados
@@ -77,8 +77,8 @@
                                     Gerar Ocorrências
                                 </a>
                             </li>
-                            <li class="py-2">
-                                <a href="ResumoMensal.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                            <li class="py-2 active">
+                                <a href="ResumoMensal.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
                                     <i class="fa-regular fa-calendar w-25px"></i>
                                     Resumo Mensal
                                 </a>
@@ -109,8 +109,8 @@
                                     Ocorrências
                                 </a>
                             </li>
-                            <li class="py-2 active">
-                                <a href="Resultados-por-Período.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
+                            <li class="py-2">
+                                <a href="Resultados-por-Período.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                                     <i class="fa-regular fa-calendar w-25px"></i>
                                     Resultados por Período
                                 </a>
@@ -129,97 +129,92 @@
 
             <!-- Coluna/Menu -->
                 <div class="col p-0 vh-100 overflow-x-hidden">
-                    
+
                     <!-- NavBar -->
-                        <nav class="d-flex align-items-center bg-white shadow-sm py-1">
-                            <!-- Icon NavBar -->
-                                <div class="ms-2 d-lg-none d-md-none d-block "> 
-                                    <a class="btn border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                        <i class="fa-solid fa-bars fa-xl "></i>
-                                    </a>
-                                </div>
-                            <!-- Icon NavBar -->
-
-                            <!-- DrowpDow -->
-                                <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
-
-                                    <div class="dropdown pe-3 ff-Inter d-xl-block d-lg-block d-md-block d-sm-none d-none">
-                                        <button class="border bg-white py-2 px-2 rounded dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                          Selecione a empresa
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                          <li><button class="dropdown-item" type="button">Action</button></li>
-                                          <li><button class="dropdown-item" type="button">Another action</button></li>
-                                          <li><button class="dropdown-item" type="button">Something else here</button></li>
-                                        </ul>
-                                    </div>
-
-                                    <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
-
-                                    <div class="dropdown ms-2 me-3">
-                                        <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Guisoft Tecnologia
-                                        </a>
-                                        
-                                        <ul class="dropdown-menu mt-3">
-                                            <li><a class="dropdown-item ff-Inter" href="#">Perfil</a></li>
-                                            <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
-                                        </ul>
-                                    </div>
-            
-                                </div>
-                            <!-- /DrowpDow -->
-                        </nav>
-                    <!-- /NavBar -->
-
-                    
-                    <!-- Section Itinerarios -->
-                    <section class="row m-lg-5 m-md-5 m-md-3 m-2">
-                        
-                        <h1 class="p-0 mb-4"><strong>Relatório</strong> Resultados por Período</h1>
-                        
-                        <div class="col-xl-8 col-lg-10 col-sm-12">
-                            <div class="row bg-white rounded shadow-sm p-3 border">
-
-                                <div class="col-lg-6 col-md-12 col-12 ff-Inter">
-                                    <div class="mb-4">
-                                        <span class="fs-5 d-block py-2">Linha de Código</span>
-                                        <input type="text" class="form-control" placeholder="Adicione o Código da sua linha" aria-label="">
-                                    </div>
-
-                                    <div class="mb-4">
-                                        <span class="fs-5 d-block py-2">Data de</span>
-                                        <input type="date" class="form-control">
-                                    </div>
-
-                                    <div class="mb-4">
-                                        <span class="fs-5 d-block py-2">Empresa</span>
-                                        <input type="text" class="form-control" placeholder="Adicione o nome da sua Empresa">
-                                    </div>
-                                    
-                                </div>
-
-                                
-                                <div class="col-lg-6 col-md-12 col-12 ff-Inter">
-                                    <div class="mb-4">
-                                        <span class="fs-5 d-block py-2">Linha</span>
-                                        <input type="text" class="form-control" placeholder="Linha">
-                                    </div>
-                                    
-                                    <div class="mb-4">
-                                        <span class="fs-5 d-block py-2">Data até</span>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xl-2 col-lg-4 col-12">
-                                    <button class="btn btn-success w-100">Confirmar</button>
-                                </div>
-                                
+                    <nav class="d-flex align-items-center bg-white shadow-sm py-1">
+                        <!-- Icon NavBar -->
+                            <div class="ms-2 d-lg-none d-md-none d-block "> 
+                                <a class="btn border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-bars fa-xl "></i>
+                                </a>
                             </div>
-                        </div>
+                        <!-- Icon NavBar -->
+
+                        <!-- DrowpDow -->
+                            <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
+                                <div class="dropdown pe-3 ff-Inter d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                                    <button class="border bg-white py-2 px-2 rounded dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Selecione a empresa
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Action</button></li>
+                                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                    </ul>
+                                </div>
+
+                                <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
+
+                                <div class="dropdown ms-2 me-3">
+                                    <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Guisoft Tecnologia
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="dropdown-item ff-Inter" href="#">Perfil</a></li>
+                                        <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                        <!-- /DrowpDow -->
+                    </nav>
+                    <!-- /NavBar -->
+                    
+                    <!-- Section Rota -->
+                    <section class="row m-3">
+                        <h1 class="p-0 mb-4"><strong>Painel</strong> Gerar Ocorrencias</h1>
+
+                        <!-- Coluna Rota -->
+                            <div class="col-lg-3 col-md-12 mb-3 mb-lg-0 col-12 p-0 ff-Inter me-4">
+                                <div class="bg-white rounded border shadow-sm">
+
+                                    <!-- Info -->
+                                    <div class="border-bottom bg-body-tertiary py-2 rounded-top">
+                                        <div class="ps-3 p-0">
+                                          <div class="d-block small text-black-50">Tipos de Ocorrencias</div>
+                                          <div>Percentual de Ocorrencias por tipo.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/Charts/Charts1.png" class="img-fluid" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 mb-3 mb-lg-0 col-12 p-0 ff-Inter">
+                                <div class="bg-white rounded border shadow-sm">
+
+                                    <!-- Info -->
+                                    <div class="border-bottom bg-body-tertiary py-2 rounded-top">
+                                        <div class="ps-3 p-0">
+                                          <div class="d-block small text-black-50">Cumprimento de Metas</div>
+                                          <div>Previsto x Realizado</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 justify-content-center d-flex p-3">
+                                           <img src="img/Charts/Charts2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Coluna Rota -->
                     </section>
-                    <!-- /Section Itinerarios -->
+                    <!-- /Section Rota -->
                 </div>
             <!-- Coluna/Menu -->
         </div>
@@ -251,7 +246,7 @@
                     <span class="small ff-roboto text-white opacity-75">Perfil</span>
                 </li>
                 
-                <li class="py-2">
+                <li class="py-2 ">
                     <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                         <i class="fa-solid fa-user w-25px"></i>
                         Seus Dados
@@ -278,7 +273,7 @@
                     </a>
                 </li>
                 <li class="py-2">
-                    <a href="Operacoes.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                    <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                         <i class="fa-regular fa-map w-25px"></i>
                         Operações
                     </a>
@@ -289,8 +284,8 @@
                         Gerar Ocorrências
                     </a>
                 </li>
-                <li class="py-2">
-                    <a href="ResumoMensal.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
+                <li class="py-2 active">
+                    <a href="ResumoMensal.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
                         <i class="fa-regular fa-calendar w-25px"></i>
                         Resumo Mensal
                     </a>
@@ -321,8 +316,8 @@
                         Ocorrências
                     </a>
                 </li>
-                <li class="py-2 active">
-                    <a href="Resultados-por-Período.html    " class="text-decoration-none text-white ms-4 ff-Inter active-hover">
+                <li class="py-2">
+                    <a href="Resultados-por-Período.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
                         <i class="fa-regular fa-calendar w-25px"></i>
                         Resultados por Período
                     </a>
