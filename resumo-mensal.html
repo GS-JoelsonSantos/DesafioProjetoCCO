@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/imports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>CCO || Dashboard</title>
+    <title>CCO || Resumo Mensal</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -16,8 +16,8 @@
 
                 <!-- Inicio -->
                 <ul class="list-unstyled text-white mb-4 mt-4">
-                    <li class="mb-2 fs-6 py-2 ps-3 active">
-                        <a href="dashboard.html" class="text-decoration-none text-white hover-opacity">
+                    <li class="mb-2 fs-6 ps-3">
+                        <a href="dashboard.html" class="text-decoration-none text-white-50 hover-opacity">
                             <i class="fa-solid fa-sliders w-5"></i>
                             Inicio
                         </a>
@@ -28,7 +28,7 @@
                 <ul class="list-unstyled text-white mb-4 mt-4">
                     <li class="ps-3 small mb-2">Perfil</li>
 
-                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 ">
                         <a href="SeusDados.html" class="text-decoration-none text-white-50 hover-opacity">
                             <i class="fa-solid fa-user w-5"></i>
                             Seus Dados
@@ -64,8 +64,8 @@
                             Gerar Ocorrencias
                         </a>
                     </li>
-                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
-                        <a href="resumo-mensal.html" class="text-decoration-none text-white-50 hover-opacity">
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 active">
+                        <a href="#" class="text-decoration-none text-white hover-opacity">
                             <i class="fa-regular fa-calendar w-5"></i>
                             Resumo Mensal
                         </a>
@@ -138,6 +138,56 @@
                             </div>
                         </div>
                     </nav>
+
+                    <!-- Section Operações -->
+                    <section class="col-12">
+                        <div class="row m-4">
+                            <h1><strong>Resumo</strong> Mensal</h1>
+                            
+                            <!-- Tabela Resumo mensal -->
+                            <div class="col-xl-3 col-lg-12 col-sm-12 col-12 border rounded me-3">
+
+                                <!-- Info Total de viajens -->
+                                <div class="border-bottom rounded p-3 bg-light">
+                                    <div>
+                                        <p class="text-black-50 fw-bold">Total de viajens</p>
+                                        <p class="text-black-50">Viagens bem-sucedidas x com ocorrências</p>
+                                    </div>
+                                </div>
+
+                                <!-- Graficos -->
+                                <div class="p-4 bg-white">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/Charts/Charts1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <!-- Tabela Cumprimento de metas -->
+                            <div class="col-xl-3 col-lg-12 col-sm-12 col-12 border rounded mt-xl-0 mt-3">
+
+                                <!-- Info Ocorrências -->
+                                <div class="border-bottom rounded p-3 bg-light">
+                                    <div>
+                                        <p class="text-black-50 fw-bold">Cumprimento de metas</p>
+                                        <p class="text-black-50">Previso x realizado.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Graficos -->
+                                <div class="p-4 bg-white">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/Charts/Charts2.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+                    </section>
                 </div>
             </div>
         </div>

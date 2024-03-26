@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/imports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>CCO || Operações</title>
+    <title>CCO || Sua Rota</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -16,7 +16,7 @@
 
                 <!-- Inicio -->
                 <ul class="list-unstyled text-white mb-4 mt-4">
-                    <li class="mb-2 fs-6 ps-3">
+                    <li class="mb-2 fs-6 py-2 ps-3">
                         <a href="dashboard.html" class="text-decoration-none text-white-50 hover-opacity">
                             <i class="fa-solid fa-sliders w-5"></i>
                             Inicio
@@ -28,7 +28,7 @@
                 <ul class="list-unstyled text-white mb-4 mt-4">
                     <li class="ps-3 small mb-2">Perfil</li>
 
-                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 ">
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
                         <a href="SeusDados.html" class="text-decoration-none text-white-50 hover-opacity">
                             <i class="fa-solid fa-user w-5"></i>
                             Seus Dados
@@ -46,14 +46,14 @@
                 <ul class="list-unstyled text-white mb-4">
                     <li class="ps-3 small mb-2">Paineis</li>
 
-                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
-                        <a href="atual-rota.html" class="text-decoration-none text-white-50 hover-opacity">
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 active">
+                        <a href="atual-rota.html" class="text-decoration-none text-white hover-opacity">
                             <i class="fa-solid fa-location-dot w-5"></i>
                             Rotas
                         </a>
                     </li>
-                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 active">
-                        <a href="Operacoes.html" class="text-decoration-none text-white hover-opacity">
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="Operacoes.html" class="text-decoration-none text-white-50 hover-opacity">
                             <i class="fa-solid fa-map-location-dot w-5"></i>
                             Operações
                         </a>
@@ -139,15 +139,16 @@
                         </div>
                     </nav>
 
-                    <!-- Section Operações -->
+                    <!-- Section Rota -->
                     <section class="col-12">
                         <div class="row m-4">
-                            <h1><strong>Painel</strong> Operações</h1>
-                            
-                            <!-- TABELA SALVADOR/JEQUIÉ -->
-                            <div class="col-xl-12 col-lg-12 col-12 border rounded">
+                            <h1>
+                                <strong>Painel</strong> Rota
+                            </h1>
 
-                                <!-- Infor Rota -->
+                            <!-- Rota -->
+                            <div class="col-xl-12 col-lg-12 col-12 border rounded">
+                                <!-- Info Rota -->
                                 <div class="border-bottom rounded p-3 bg-light">
                                     <div class="d-flex align-items-center">
                                         <span class="badge text-bg-info p-2 me-2 text-white">055</span>
@@ -155,73 +156,17 @@
                                     </div>
                                 </div>
 
-                                <!-- Painel Operações -->
+                                <!-- Container Rota -->
                                 <div class="p-4 bg-white">
-                                    <!-- Status -->
-                                    <div class="row">
-                                        <!-- Status/Direita -->
-                                        <div class="col-xl-9 col-sm-12 mb-4">
-                                            <div>
-                                                <p>Empresa: <strong>AUTO VIAÇÃO CAMURUJIPE LTDA</strong></p>
-                                                <p>Tipo de veículo: <strong>ÔNIBUS RODOVÁRIO CONVENCIONAL</strong></p>
-                                            </div>
-                                        </div>
-
-                                        <!-- Status/Esquerda -->
-                                        <div class="col-xl col-sm-12">
-                                            <div>
-                                                <p>Empresa: <strong>AUTO VIAÇÃO CAMURUJIPE LTDA</strong></p>
-                                                <p>Tipo de veículo: <strong>ÔNIBUS RODOVÁRIO CONVENCIONAL</strong></p>
-                                            </div>
-                                        </div>
+                                    <!-- Maps -->
+                                    <div>
+                                        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Cosme%20de%20farias,%20salvador+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                        </iframe>
                                     </div>
 
-                                    <!-- Progress Partida -->
-                                    <div class="row mt-3 mb-5 gap-4">
-                                        <!-- Cumprimento da partida: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Cumprimento da partida:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 20%">20%</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Viagens realizadas: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Viagens realizadas:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 55%">55%</div>
-                                            </div>
-                                        </div>
-                                        
-                                        <!-- Partidas Pontuais: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Partidas Pontuais:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 25%">25%</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Partidas atrasadas: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Partidas atrasadas:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 0%">0%</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Partidas adiantadas: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Partidas adiantadas:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 5%">5%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Progress Buss -->
-                                    <div class="row mt-4">
-                                        <!-- Progress Cidades -->
+                                    <!-- Progress -->
+                                    <div class="mt-2">
+                                        <!-- Progress Nome Cidades -->
                                         <div class="progress bg-transparent mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar bg-transparent" style="width: 5%">
                                                 <span class="text-black">Salvador</span>
@@ -272,7 +217,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- Progress Circle -->
+                                        <!-- Progress Buss -->
                                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar bg-transparent" style="width: 5%">
                                                 <i class="fa-solid fa-circle text-black"></i>
@@ -325,217 +270,63 @@
 
                                         <!-- Progress Horario -->
                                         <div class="progress bg-transparent mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar bg-transparent" style="width: 42%">
+                                            <div class="progress-bar bg-transparent" style="width: 5%">
+                                                <span class="text-black-50">21:40</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 11%">
+                                                <span class="text-black-50">22:30</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 10%">
                                                 <span class="text-third">
                                                     <i class="fa-solid fa-bus"></i>
                                                     JPV329P
                                                 </span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                            </div>
-
-                            <!-- TABELA SALVADOR/ALAGOINHAS -->
-                            <div class="mt-5 col-xl-12 col-lg-12 col-12 border rounded">
-
-                                <!-- Infor Rota -->
-                                <div class="border-bottom rounded p-3 bg-light">
-                                    <div class="d-flex align-items-center">
-                                        <span class="badge text-bg-info p-2 me-2 text-white">055</span>
-                                        <span class="fs-2 text-uppercase">Salvador - alagoinhas</span>
-                                    </div>
-                                </div>
-
-                                <!-- Painel Operações -->
-                                <div class="p-4 bg-white">
-                                    <!-- Status -->
-                                    <div class="row">
-                                        <!-- Status/Direita -->
-                                        <div class="col-xl-9 col-sm-12 mb-4">
-                                            <div>
-                                                <p>Empresa: <strong>AUTO VIAÇÃO CAMURUJIPE LTDA</strong></p>
-                                                <p>Tipo de veículo: <strong>ÔNIBUS RODOVÁRIO CONVENCIONAL</strong></p>
+                                            <div class="progress-bar bg-transparent" style="width: 10%">
+                                                <span class="text-black-50">04:25</span>
                                             </div>
-                                        </div>
 
-                                        <!-- Status/Esquerda -->
-                                        <div class="col-xl col-sm-12">
-                                            <div>
-                                                <p>Empresa: <strong>AUTO VIAÇÃO CAMURUJIPE LTDA</strong></p>
-                                                <p>Tipo de veículo: <strong>ÔNIBUS RODOVÁRIO CONVENCIONAL</strong></p>
+                                            <div class="progress-bar bg-transparent" style="width: 10%">
+                                                <span class="text-black-50">05:30</span>
                                             </div>
-                                        </div>
-                                    </div>
 
-                                    <!-- Progress Partida -->
-                                    <div class="row mt-3 mb-5 gap-4">
-                                        <!-- Cumprimento da partida: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Cumprimento da partida:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 55%">55%</div>
+                                            <div class="progress-bar bg-transparent" style="width: 10%">
+                                                <span class="text-black-50">05:55</span>
                                             </div>
-                                        </div>
 
-                                        <!-- Viagens realizadas: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Viagens realizadas:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 35%">35%</div>
+                                            <div class="progress-bar bg-transparent" style="width: 10%">
+                                                <span class="text-black-50">06:20</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 10%">
+                                                <span class="text-black-50">07:10</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 5%">
+                                               <span class="text-black-50">07:10</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 8%">
+                                                <span class="text-black-50">07:30</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 7%">
+                                                <span class="text-black-50">08:40</span>
+                                            </div>
+
+                                            <div class="progress-bar bg-transparent" style="width: 4%">
+                                                <span class="text-black-50">09:40</span>
                                             </div>
                                         </div>
                                         
-                                        <!-- Partidas Pontuais: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Partidas Pontuais:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 15%">15%</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Partidas atrasadas: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Partidas atrasadas:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 30%">30%</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Partidas adiantadas: -->
-                                        <div class="col-xl col-md-12 col-sm-12 col-12">
-                                            <p>Partidas adiantadas:</p>
-                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-info" style="width: 0%">0%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Progress Buss -->
-                                    <div class="row mt-4">
-                                        <!-- Progress Cidades -->
-                                        <div class="progress bg-transparent mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar bg-transparent" style="width: 5%">
-                                                <span class="text-black">Salvador</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 11%">
-                                                <span class="text-black">ENTRONC</span>
-                                            </div>
-
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <span class="text-black">Camaçari</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <span class="text-black">Dias d'ávila</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <span class="text-black">Mata de São João</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <span class="text-white">Você</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <span class="text-black">Pojuca</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <span class="text-black">Catu</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 5%">
-                                                <span class="text-black">Santa Inês</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 8%">
-                                                <span class="text-black">Pau lavrado</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 7%">
-                                                <span class="text-black">Sítio novo</span>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 4%">
-                                                <span class="text-black">alagoinhas</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- Progress Circle -->
-                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar bg-transparent" style="width: 5%">
-                                                <i class="fa-solid fa-circle text-black"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 11%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <i class="fa-solid fa-circle text-danger"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 10%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 5%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 8%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 7%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 4%">
-                                                <i class="fa-solid fa-circle small-2x"></i>
-                                            </div>
-                                        </div>
-
-                                        <!-- Progress Horario -->
-                                        <div class="progress bg-transparent mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar bg-transparent" style="width: 40%">
-                                            </div>
-
-                                            <div class="progress-bar bg-transparent" style="width: 22%">
-                                                <span class="text-danger">
-                                                    <i class="fa-solid fa-bus"></i>
-                                                    KM67OP4
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
 
                             </div>
                         </div>
-
-                        
                     </section>
                 </div>
             </div>

@@ -3,338 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/imports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Gerar Ocorrências</title>
+    <title>CCO || Gerar Operações</title>
 </head>
 <body>
-    <!-- Container -->
     <div class="container-fluid">
-        <!-- Row -->
-        <div class="row">
-            <!-- Coluna/Aside -->
-                <div class="col p-0 d-none d-md-block columa-260px aside-bg-custom vh-100 overflow-x-hidden">
-                    <ul class="list-unstyled text-white-50">
-                        <!-- Logo CCO -->   
-                            <li class="my-3 ms-4">
-                                <span>
-                                    <a href="#" class="text-decoration-none text-white fs-5 fw-semibold active-hover">CCO</a>
-                                </span>
-                            </li>
-                        <!-- /Logo CCO -->
-                        
+        <div class="row vh-100">
+            <!-- Coluna Da Esqueda || SideMenu -->
+            <aside class="d-lg-block d-none col bg-primary max-width-260">
+                <a href="#" class="text-decoration-none text-white fs-4 ms-3 d-block mt-3 fw-bold">CCO</a>
 
-                        <!-- Grupo Inicio -->
-                            <li class="my-3 mt-4">
-                                <a href="dashboard.html" class="text-decoration-none text-white-50 active-hover w-100 d-block py-2 ms-4 ff-Inter">
-                                    <i class="fa-solid fa-sliders w-25px"></i>
-                                    Início
-                                </a>
-                            </li>
-                        <!-- /Grupo inicio -->
+                <!-- Inicio -->
+                <ul class="list-unstyled text-white mb-4 mt-4">
+                    <li class="mb-2 fs-6 ps-3">
+                        <a href="dashboard.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-sliders w-5"></i>
+                            Inicio
+                        </a>
+                    </li>
+                </ul>
 
+                <!-- Perfil -->
+                <ul class="list-unstyled text-white mb-4 mt-4">
+                    <li class="ps-3 small mb-2">Perfil</li>
 
-                        <!-- Grupo Perfil -->
-                            <li class="py-1 ms-3 mt-3">
-                                <span class="small ff-roboto text-white opacity-75">Perfil</span>
-                            </li>
-                            
-                            <li class="py-2">
-                                <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-user w-25px"></i>
-                                    Seus Dados
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="login.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-right-from-bracket w-25px"></i>
-                                    Sair
-                                </a>
-                            </li>
-                        <!-- /Grupo Perfil -->
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 ">
+                        <a href="SeusDados.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-user w-5"></i>
+                            Seus Dados
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="index.html" class="text-decoration-none text-white-50 hover-opacity" data-bs-toggle="modal" data-bs-target="#staticBackdrop">  
+                            <i class="fa-solid fa-right-to-bracket w-5"></i>
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Paineis -->
+                <ul class="list-unstyled text-white mb-4">
+                    <li class="ps-3 small mb-2">Paineis</li>
 
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="atual-rota.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-location-dot w-5"></i>
+                            Rotas
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="Operacoes.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-map-location-dot w-5"></i>
+                            Operações
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-2 active">
+                        <a href="gerar-ocorrencias.html" class="text-decoration-none text-white hover-opacity">
+                            <i class="fa-regular fa-square-plus w-5"></i>
+                            Gerar Ocorrencias
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="resumo-mensal.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-regular fa-calendar w-5"></i>
+                            Resumo Mensal
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="#" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-calendar-check w-5"></i>
+                            Evolução Anual
+                        </a>
+                    </li>
+                </ul>
 
-                        <!-- Grupo Paineis -->
-                            <li class="py-1 ms-3 mt-3">
-                                <span class="small ff-roboto text-white opacity-75">Painéis</span>
-                            </li>
-                            
-                            <li class="py-2">
-                                <a href="rotas.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-location-dot w-25px"></i>
-                                    Rotas
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="Operacoes.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-regular fa-map w-25px"></i>
-                                    Operações
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-triangle-exclamation w-25px"></i>
-                                    Gerar Ocorrências
-                                </a>
-                            </li>
-                            <li class="py-2 active">
-                                <a href="ResumoMensal.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
-                                    <i class="fa-regular fa-calendar w-25px"></i>
-                                    Resumo Mensal
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-arrow-trend-up w-25px"></i>
-                                    Evolução Anual
-                                </a>
-                            </li>
-                        <!-- /Grupo Paineis -->
+                <!-- Relatorios -->
+                <ul class="list-unstyled text-white mb-4">
+                    <li class="ps-3 small mb-2">Relatorios</li>
 
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="Itineratio.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-bars w-5"></i>
+                            Itinerarios
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="Ocorrencias.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-triangle-exclamation w-5"></i>
+                            Ocorrencias
+                        </a>
+                    </li>
+                    <li class="ps-4 mb-2 text-white-50 fs-6 py-1">
+                        <a href="resultados-periodo.html" class="text-decoration-none text-white-50 hover-opacity">
+                            <i class="fa-solid fa-calendar-minus w-5"></i>
+                            Resultados por periodo
+                        </a>
+                    </li>
+                </ul>
 
-                        <!-- Grupo Relatorios -->
-                            <li class="py-1 ms-3 mt-3">
-                                <span class="small ff-roboto text-white opacity-75">Relatórios</span>
-                            </li>
-                            
-                            <li class="py-2">
-                                <a href="Itinerarios.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-bars w-25px"></i>
-                                    Itinerários
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-solid fa-triangle-exclamation w-25px"></i>
-                                    Ocorrências
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="Resultados-por-Período.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                                    <i class="fa-regular fa-calendar w-25px"></i>
-                                    Resultados por Período
-                                </a>
-                            </li>
-                        <!-- /Grupo Relatorios -->
-                    </ul>
-
-                    <div class="bg-aside-nav-custom ms-4 me-4 rounded p-3 ff-roboto">
-                        <h1 class="fs-custom-primary text-uppercase">Guisoft</h1>
-                        <h4 class="fs-custom-primary">Tecnologia</h4>
-                        <p class="fs-custom-small text-white-50">Clique para saber mais...</p>
-                        <a href="#" class="btn btn-primary text-white text-center w-100">Website</a>
-                    </div>
+                <!-- Cart -->
+                <div class="ms-3 me-4 rounded p-3 text-white" style="background-color: #2a3b49;">
+                    <h1 class="fs-5 text-uppercase">Guisoft</h1>
+                    <h4 class="fs-5 mb-1">Tecnologia</h4>
+                    <p class="fs-7 text-white-50 mb-1">Clique para saber mais...</p>
+                    <a href="#" class="btn btn-third text-center w-100 py-2">Website</a>
                 </div>
-            <!-- Coluna/Aside -->
 
-            <!-- Coluna/Menu -->
-                <div class="col p-0 vh-100 overflow-x-hidden">
-
-                    <!-- NavBar -->
-                    <nav class="d-flex align-items-center bg-white shadow-sm py-1">
-                        <!-- Icon NavBar -->
-                            <div class="ms-2 d-lg-none d-md-none d-block "> 
-                                <a class="btn border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                    <i class="fa-solid fa-bars fa-xl "></i>
-                                </a>
-                            </div>
-                        <!-- Icon NavBar -->
-
-                        <!-- DrowpDow -->
-                            <div class="w-100 d-flex align-items-center justify-content-end p-2 p-md-0">
-                                <div class="dropdown pe-3 ff-Inter d-xl-block d-lg-block d-md-block d-sm-none d-none">
-                                    <button class="border bg-white py-2 px-2 rounded dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Selecione a empresa
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><button class="dropdown-item" type="button">Action</button></li>
-                                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                                      <li><button class="dropdown-item" type="button">Something else here</button></li>
-                                    </ul>
-                                </div>
-
-                                <img src="img/avatars/avatar.jpg" class="img-fluid rounded d-none d-md-block" alt="" style="height: 40px;">
-
-                                <div class="dropdown ms-2 me-3">
-                                    <a class="dropdown-toggle text-decoration-none text-black ff-Inter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Guisoft Tecnologia
-                                    </a>
-                                    
-                                    <ul class="dropdown-menu mt-3">
-                                        <li><a class="dropdown-item ff-Inter" href="#">Perfil</a></li>
-                                        <li><a class="dropdown-item ff-Inter" href="login.html">Sair</a></li>
-                                    </ul>
-                                </div>
+            </aside>
+            
+            <!-- Coluna Da Direita || TopMenu -->
+            <div class="col">
+                <div class="row">
+                    <!-- Nav || TopMenu -->
+                    <nav class="col-12 bg-white">
+                        <div class="d-flex align-items-center justify-content-end py-2 shadow-sm">
+                            <!-- Imagem Avatar -->
+                            <img src="img/avatars/avatar.jpg" class="img-fluid rounded me-3" style="max-width: 40px;" alt="">
+                            
+                            <!-- dropdown -->
+                            <div class="dropdown me-4">
+                                <button class="btn btn-secondary dropdown-toggle bg-transparent border-0 text-primary fw-medium" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Guisoft Tecnologia
+                                </button>
         
+                                <ul class="dropdown-menu p-3 mt-3 shadow-sm">
+                                    <li class="mb-2">
+                                        <a class="dropdown-item" href="#">Perfil</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a class="dropdown-item" href="index.html">Deslogar</a>
+                                    </li>
+                                </ul>
                             </div>
-                        <!-- /DrowpDow -->
+                        </div>
                     </nav>
-                    <!-- /NavBar -->
-                    
-                    <!-- Section Rota -->
-                    <section class="row m-3">
-                        <h1 class="p-0 mb-4"><strong>Painel</strong> Gerar Ocorrencias</h1>
 
-                        <!-- Coluna Rota -->
-                            <div class="col-lg-3 col-md-12 mb-3 mb-lg-0 col-12 p-0 ff-Inter me-4">
-                                <div class="bg-white rounded border shadow-sm">
+                    <!-- Section Operações -->
+                    <section class="col-12">
+                        <div class="row m-4">
+                            <h1><strong>Gerar</strong> Ocorrências</h1>
+                            
+                            <!-- Tabela tipos de Ocorrências -->
+                            <div class="col-xl-4 col-lg-12 col-sm-12 col-12 border rounded me-3">
 
-                                    <!-- Info -->
-                                    <div class="border-bottom bg-body-tertiary py-2 rounded-top">
-                                        <div class="ps-3 p-0">
-                                          <div class="d-block small text-black-50">Tipos de Ocorrencias</div>
-                                          <div>Percentual de Ocorrencias por tipo.</div>
-                                        </div>
+                                <!-- Info Ocorrências -->
+                                <div class="border-bottom rounded p-3 bg-light">
+                                    <div>
+                                        <p class="text-black-50 fw-bold">Tipos de Ocorrências</p>
+                                        <p class="text-black-50">Percentual de Ocorrências por tipo.</p>
                                     </div>
+                                </div>
 
+                                <!-- Graficos Ocorrências -->
+                                <div class="p-4 bg-white">
                                     <div class="d-flex justify-content-center">
-                                        <img src="img/Charts/Charts1.png" class="img-fluid" alt="">
+                                        <img src="img/Charts/Charts3.png" class="img-fluid" alt="">
                                     </div>
-                                    
-                                </div>
-                            </div>
 
-                            <div class="col-lg-4 col-md-12 mb-3 mb-lg-0 col-12 p-0 ff-Inter">
-                                <div class="bg-white rounded border shadow-sm">
+                                    <div class="border-bottom border-top mt-4">
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Atrasos na partida</p>
+                                            <p>4306</p>
+                                        </div>
 
-                                    <!-- Info -->
-                                    <div class="border-bottom bg-body-tertiary py-2 rounded-top">
-                                        <div class="ps-3 p-0">
-                                          <div class="d-block small text-black-50">Cumprimento de Metas</div>
-                                          <div>Previsto x Realizado</div>
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Atrasos na chegada</p>
+                                            <p>3801</p>
+                                        </div>
+                                        
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Veículos quebrado</p>
+                                            <p>1689</p>
+                                        </div>
+                                        
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Desvop de rota</p>
+                                            <p>400</p>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="row">
-                                        <div class="col-12 justify-content-center d-flex p-3">
-                                           <img src="img/Charts/Charts2.png" class="img-fluid" alt="">
+                            </div>
+                            
+                            <!-- Tabela tipos de Ocorrências por empresa -->
+                            <div class="col-xl-4 col-lg-12 col-sm-12 col-12 border rounded mt-xl-0 mt-3">
+
+                                <!-- Info Ocorrências -->
+                                <div class="border-bottom rounded p-3 bg-light">
+                                    <div>
+                                        <p class="text-black-50 fw-bold">Ocorrências por empresas</p>
+                                        <p class="text-black-50">Quantidade de ocorrências por empresa.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Graficos Ocorrências -->
+                                <div class="p-4 bg-white">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/Charts/Charts4.png" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="border-bottom border-top mt-4">
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Empresa A</p>
+                                            <p>4306</p>
+                                        </div>
+
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Empresa B</p>
+                                            <p>3801</p>
+                                        </div>
+                                        
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Empresa C</p>
+                                            <p>1697</p>
+                                        </div>
+                                        
+                                        <div class="border-bottom py-2 d-flex justify-content-between">
+                                            <p>Empresa D</p>
+                                            <p>400</p>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                        <!-- Coluna Rota -->
+
+                        </div>
+
+                        
                     </section>
-                    <!-- /Section Rota -->
                 </div>
-            <!-- Coluna/Menu -->
+            </div>
         </div>
     </div>
 
-    <!-- offcanvas -->
-    <div class="offcanvas offcanvas-start aside-bg-custom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <!-- Modal Saida -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mx-auto w-100 my-3">
+          <div class="modal-content">
+            <div class="modal-header py-2 border-0">
+              <h1 class="modal-title fs-4 ps-3 flex-fill" id="staticBackdropLabel">Tem certeza que deseja sair?</h1>
+              <button type="button" class="btn-close me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-white fs-5 fw-semibold" id="offcanvasExampleLabel">CCO</h5>
-          <i class="fa-solid fa-xmark fs-2" style="color: #ffffff;" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-          
+            <div class="modal-body d-flex justify-content-end p-2 w-100 ">
+                <a href="index.html" class="text-decoration-none text-white py-1 px-3 bg-primary rounded me-3" data-bs-dismiss="modal">Continuar</a>
+                <a href="index.html" class="text-decoration-none text-white py-1 px-3 bg-primary rounded">Sair</a>
+            </div>
+          </div>
         </div>
-
-        <div class="offcanvas-body p-0">
-            <ul class="list-unstyled text-white-50">
-                <!-- Grupo Inicio -->
-                <li class="my-3 mt-4">
-                    <a href="dashboard.html" class="text-decoration-none text-white-50 w-100 d-block py-2 ms-4 ff-Inter">
-                        <i class="fa-solid fa-sliders w-25px"></i>
-                        Início
-                    </a>
-                </li>
-                <!-- /Grupo inicio -->
-
-
-                <!-- Grupo Perfil -->
-                <li class="py-1 ms-3 mt-3">
-                    <span class="small ff-roboto text-white opacity-75">Perfil</span>
-                </li>
-                
-                <li class="py-2 ">
-                    <a href="perfilDados.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-user w-25px"></i>
-                        Seus Dados
-                    </a>
-                </li>
-                <li class="py-2">
-                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-right-from-bracket w-25px"></i>
-                        Sair
-                    </a>
-                </li>
-                <!-- /Grupo Perfil -->
-
-
-                <!-- Grupo Paineis -->
-                <li class="py-1 ms-3 mt-3">
-                    <span class="small ff-roboto text-white opacity-75">Painéis</span>
-                </li>
-                
-                <li class="py-2">
-                    <a href="rotas.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-location-dot w-25px"></i>
-                        Rotas
-                    </a>
-                </li>
-                <li class="py-2">
-                    <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-regular fa-map w-25px"></i>
-                        Operações
-                    </a>
-                </li>
-                <li class="py-2">
-                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-triangle-exclamation w-25px"></i>
-                        Gerar Ocorrências
-                    </a>
-                </li>
-                <li class="py-2 active">
-                    <a href="ResumoMensal.html" class="text-decoration-none text-white ms-4 ff-Inter active-hover">
-                        <i class="fa-regular fa-calendar w-25px"></i>
-                        Resumo Mensal
-                    </a>
-                </li>
-                <li class="py-2">
-                    <a href="#" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-arrow-trend-up w-25px"></i>
-                        Evolução Anual
-                    </a>
-                </li>
-                <!-- /Grupo Paineis -->
-
-
-                <!-- Grupo Relatorios -->
-                <li class="py-1 ms-3 mt-3">
-                    <span class="small ff-roboto text-white opacity-75">Relatórios</span>
-                </li>
-                
-                <li class="py-2">
-                    <a href="Itinerarios.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-bars w-25px"></i>
-                        Itinerários
-                    </a>
-                </li>
-                <li class="py-2">
-                    <a href="Ocorrencias.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-solid fa-triangle-exclamation w-25px"></i>
-                        Ocorrências
-                    </a>
-                </li>
-                <li class="py-2">
-                    <a href="Resultados-por-Período.html" class="text-decoration-none text-white-50 ms-4 ff-Inter active-hover">
-                        <i class="fa-regular fa-calendar w-25px"></i>
-                        Resultados por Período
-                    </a>
-                </li>
-                <!-- /Grupo Relatorios -->
-
-                <div class="bg-aside-nav-custom ms-4 me-4 rounded p-3 ff-roboto">
-                    <h1 class="fs-custom-primary text-uppercase">Guisoft</h1>
-                    <h4 class="fs-custom-primary">Tecnologia</h4>
-                    <p class="fs-custom-small text-white-50">Clique para saber mais...</p>
-                    <a href="#" class="btn btn-primary text-white text-center w-100">Website</a>
-                </div>
-            </ul>
-        </div>
-
     </div>
-    <!-- offcanvas -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

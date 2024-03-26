@@ -1,46 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Faça o Login</title>
-  </head>
-  <body>
-    <div class="container-fluid" style="background-color: #F5F7FB;">
-      <div class="row vh-100 d-flex justify-content-center">
-        <div class="col-lg-4 col-md-8 col-sm-10 d-flex justify-content-center align-items-center">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/imports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-5 col-md-10 mx-auto vh-100 d-flex flex-column align-items-center justify-content-center">
+              <img src="img/logo.png" alt="" class="img-fluid">
+              
+              <div class="w-100">
+                <form class="bg-white shadow-sm rounded p-5 mt-4">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label mb-2">Login</label>
+                      <input type="email" class="form-control py-2 px-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
 
-          <div class="w-75">
-            <div class="d-flex justify-content-center">
-              <img src="img/logo.png" class="img-fluid" alt="">
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label mb-2">Senha</label>
+                      <input type="password" class="form-control py-2 px-3" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="mb-3 form-check d-flex align-items-center gap-2">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Deixar-me Conectado</label>
+                    </div>
+
+                    <a href="dashboard.html" class="btn btn-primary w-100 py-2">
+                      <i class="fa-solid fa-right-to-bracket me-1"></i>
+                      Entrar
+                    </a>
+
+                    <h1 class="text-c-color">text-c-color</h1>
+                  </form>
+
+                </form>
+              </div>
             </div>
-
-            <div class="mt-4 bg-white rounded shadow-sm  w-100">
-              <form class="py-4 px-4 m-3">
-                <div class="mb-3 mt-3">
-                  <label for="exampleInputEmail1" class="form-label text-body-secondary">Usuário</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira o seu Usuário">
-                <div>
-
-                <div class="mb-3 mt-3">
-                  <label for="exampleInputPassword1" class="form-label text-body-secondary">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Insira a sua senha">
-                  <a class="text-decoration-none" href="#"><small>Esqueceu a senha?</small></a>
-                </div>
-
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Manter-me logado</label>
-                </div>
-
-                <a href="dashboard.html" target="_self"><button type="button" class="btn btn-primary w-100">Entrar</button></a>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
